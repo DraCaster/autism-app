@@ -22,7 +22,7 @@ Por medio de registros, el usuario registrará en la herramienta la evolución d
 
 - Bignone, Camila - Desarrolladora 
 - Borghi, Yessica - Desarrolladora - <a>https://github.com/yessiborghi </a>
-- Harari, Ivana - Coordinadora 
+- Harari, Ivana - Coordinadora - <a> https://github.com/cam-ila </a>
 - Rojas, Lujan - Desarrolladora -  <a>https://github.com/dracaster </a>
 
 
