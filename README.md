@@ -21,10 +21,13 @@ Por medio de registros, el usuario registrará en la herramienta la evolución d
 ## Equipo de trabajo:
 
 - Harari, Ivana - Coordinadora
-- Bignone, Camila - Desarrolladora -  <a> https://github.com/cam-ila </a>
-- Borghi, Yessica - Desarrolladora - <a>https://github.com/yessiborghi </a>
-- Rojas, Lujan - Desarrolladora -  <a>https://github.com/dracaster </a>
+- Bignone, Camila - Desarrolladora - [GitHub](https://github.com/cam-ila)
+- Borghi, Yessica - Desarrolladora - [GitHub](https://github.com/yessiborghi)
+- Rojas, Lujan - Desarrolladora -  [GitHub](https://github.com/dracaster)
 
+## API Documentación:
+
+[API Documentacion](https://github.com/DraCaster/autism-app/blob/master/api/README-API.md)
 
 
 
