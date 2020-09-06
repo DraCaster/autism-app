@@ -1,5 +1,5 @@
 # autism-app
-Herramienta Tecnológica para el seguimiento del proceso evolutivo del infante con autismo
+Herramienta Tecnológica para el seguimiento del proceso evolutivo del infante autista.
 
 ## Motivaciones
 
@@ -18,11 +18,12 @@ Por medio de registros, el usuario registrará en la herramienta la evolución d
 
 - Utilización de geolocalización para obtener los hospitales, organizaciones y centros relacionados más cercanos.
 
-## Equipo de desarrollo:
+## Equipo de trabajo:
 
-- Bignone, Camila
-- Borghi, Yessica - <a>https://github.com/yessiborghi </a>
-- Rojas, Lujan - <a>https://github.com/dracaster </a>
+- Harari, Ivana - Coordinadora
+- Bignone, Camila - Desarrolladora -  <a> https://github.com/cam-ila </a>
+- Borghi, Yessica - Desarrolladora - <a>https://github.com/yessiborghi </a>
+- Rojas, Lujan - Desarrolladora -  <a>https://github.com/dracaster </a>
 
 
 
