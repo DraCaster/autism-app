@@ -31,7 +31,11 @@ const UserSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Role',
         required: true,
-    }
+    },
+    patients:[{type: mongoose.Schema.Types.ObjectId,
+        ref: 'Patients',
+        required: true,
+    }],
 }, {timestamps: true});
 
 //UserSchema.set('toJSON', {getters: true});
