@@ -38,5 +38,7 @@ La carpeta **modules** contiene los siguientes modulos:
 - **Security**: contiene todo lo relacionado a los usuarios del sistema, sus roles, permisos, un sistema de rbac(sistema de control basado en roles y permisos) que permite hacer seguro todos los endpoints del sistema. 
 
 
+![](https://github.com/DraCaster/autism-app/blob/master/api/doc/API2.png)
+
 
 
