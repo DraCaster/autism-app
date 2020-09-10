@@ -1,6 +1,6 @@
 # Estructura de la API
 
-![](./doc/API.png)
+![](https://github.com/DraCaster/autism-app/blob/master/api/doc/API.png)
 
 
 
