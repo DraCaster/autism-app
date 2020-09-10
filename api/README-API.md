@@ -7,10 +7,10 @@
 
 ## Levantar la API
 
-- _Accede a la carpeta del servidor_
+- _Accede a la carpeta api_
 
 ```
-cd server
+cd api
 ```
 
 - _Renombra el archivo .env.example a .env y configurarlo con los datos del servidor_
