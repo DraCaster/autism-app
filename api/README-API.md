@@ -29,3 +29,5 @@ npm start
 
 - _Para verificar si el servidor levanto correctamente se puede hacer una pegada al endpoint /status_
 
+- Estructura de la API y documentación: https://github.com/DraCaster/autism-app/blob/master/api/doc/API.md
+
