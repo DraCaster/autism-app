@@ -27,7 +27,7 @@ Por medio de registros, el usuario registrará en la herramienta la evolución d
 
 ## Documentación:
 
-[API Documentacion](https://github.com/DraCaster/autism-app/blob/master/api/README-API.md)
+[API](https://github.com/DraCaster/autism-app/blob/master/api/README-API.md)
 
 
 
