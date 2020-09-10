@@ -1,11 +1,11 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import './mongo-db-configuration'
-import userRouter from './src/modules/users/routes'
+import userRouter from './src/modules/security/routes'
 import corsMiddleware from './src/modules/middleware/corsModdleware'
 import bodyParser from 'body-parser'
-import {jwtAuth, handleAuthError} from './src/modules/users/middleware/auth';
-import rbacMiddleware from './src/modules/users/middleware/rbacMiddleware';
+import {jwtAuth, handleAuthError} from './src/modules/security/middleware/auth';
+import rbacMiddleware from './src/modules/security/middleware/rbacMiddleware';
 
 const port = process.env.PORT_BACKEND
 
