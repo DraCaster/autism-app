@@ -20,7 +20,7 @@ Por medio de registros, el usuario registrará en la herramienta la evolución d
 
 ## Equipo de trabajo:
 
-- Harari, Ivana - Coordinadora
+- Harari, Ivana - Coordinadora - [Github](https://github.com/iharari)
 - Bignone, Camila - Desarrolladora - [Github](https://github.com/cam-ila)
 - Borghi, Yessica - Desarrolladora - [Github](https://github.com/yessiborghi)
 - Rojas, Lujan - Desarrolladora -  [Github](https://github.com/dracaster)
