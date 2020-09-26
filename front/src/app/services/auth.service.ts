@@ -12,8 +12,24 @@ export class AuthService {
 
   loginUser(username: string, pass: string){
     // const url_api = environment.url + `usuarios/login`;
+    const url_api = "";
 
+    let user : any = {
+      id : null,
+      username: username,
+      password: pass,
+      nombre: null,
+      email: null,
+      perfil: null,
+    }
+
+    return (this.http.post(url_api, user, {observe: 'response'})
+    .pipe(map(data => {
+      this.setUser(data.body);
+      return data;
+    })));
   }
+  
 
   isNotLogged(){
     return (this.getCurrentUser() != null);
@@ -27,7 +43,7 @@ export class AuthService {
     return (this.getCurrentUser().profile == "" || this.getCurrentUser().profile == "");
   }
 
-  setUser(user){
+  setUser(user: any){
     let cadena = {
       'username': user.username,
       'name': user.nombre,
