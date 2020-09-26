@@ -1,0 +1,156 @@
+<div class="page-wrapper chiller-theme toggled">
+    <button id="show-sidebar" class="btn btn-sm btn-default button" href="#">
+      <i class="fa fa-bars"></i>
+    </button>
+  
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a></a>
+          <div id="close-sidebar"><i class="fa fa-times"></i></div>
+        </div>
+        <div class="sidebar-header">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="../../../assets/images/children.png"
+              alt="Foto de perfil">
+          </div>
+          <!-- <div class="user-info">
+            <span class="user-name">{{user.username}}</span>
+            <span class="user-status"><i class="fa fa-circle"></i>{{user.profile}}</span>
+          </div> -->
+        </div>
+        <div class="sidebar-menu">
+          <ul>
+            <li class="header-menu">
+              <span></span>
+            </li>
+            <!-- <li class="sidebar-dropdown">
+              <a><i class="fa fa-star"></i><span>Actividades</span></a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li><a [routerLink]="['/actividades']">Generales</a></li>
+                  <li><a [routerLink]="['/actividades/obras']">Obras</a></li>
+                </ul>
+              </div>
+            </li> -->
+            <li class="">
+              <a [routerLink]="['/register']">
+                <i class="fa fa-star"></i><span>Registrarme</span>
+                <span class="badge badge-pill badge-danger"></span>
+              </a>
+            </li>
+
+            <li class="">
+                <a [routerLink]="['/login']">
+                    <i class="fa fa-star"></i><span>Iniciar sesión</span>
+                    <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+
+            <li class="">
+                <a [routerLink]="['/ubicacion']">
+                    <i class="fa fa-star"></i><span>Ubicación</span>
+                    <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+          </ul>
+        
+          <ul *ngIf="this.isManager()">
+            <li class="">
+              <a [routerLink]="['/denver']">
+                <i class="fa fa-star"></i><span>Sobre Denver</span>
+                <span class="badge badge-pill badge-warning"></span>
+              </a>
+            </li>
+  
+            <li class="">
+              <a [routerLink]="['/pacientes']">
+                <i class="fa fa-star"></i>
+                <span>Mis pacientes</span>
+                <span class="badge badge-pill badge-danger"></span>
+              </a>
+            </li>
+  
+            <li class="">
+              <a [routerLink]="['/tea']">
+                <i class="fa fa-star"></i><span>Examen inicial TEA</span>
+                <span class="badge badge-pill badge-danger"></span>
+              </a>
+            </li>
+
+            <li class="">
+                <a [routerLink]="['/planificacion']">
+                  <i class="fa fa-star"></i><span>Planificación</span>
+                  <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+
+            <li class="">
+                <a [routerLink]="['/cronograma']">
+                    <i class="fa fa-star"></i><span>Cronograma</span>
+                    <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+
+            <li class="">
+                <a [routerLink]="['/rutina']">
+                    <i class="fa fa-star"></i><span>Obtener rutina</span>
+                    <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+            <li class="">
+                <a [routerLink]="['/resultados']">
+                    <i class="fa fa-star"></i><span>Ver resultados</span>
+                    <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+
+            <li class="">
+                <a [routerLink]="['/ubicacion']">
+                    <i class="fa fa-star"></i><span>Ubicación</span>
+                    <span class="badge badge-pill badge-danger"></span>
+                </a>
+            </li>
+          </ul>
+          
+          <ul *ngIf="this.isManager()">
+            <li class="header-menu">
+              <span>Privado</span>
+            </li>
+  
+            <li class="">
+              <a [routerLink]="['/usuarios']">
+                <i class="fa fa-user"></i><span>Usuarios</span>
+                <span class="badge badge-pill badge-danger"></span>
+              </a>
+            </li>
+  
+            <li class="">
+              <a [routerLink]="['/perfiles']">
+                <i class="fa fa-users"></i><span>Perfiles</span>
+                <span class="badge badge-pill badge-danger"></span>
+              </a>
+            </li>
+
+
+            <ul>
+                <li class="header-menu">
+                  <span>Salida</span>
+                </li>
+                <li class="">
+                  <a class="nav-link" href="#" (click)="onLogout()">
+                    <i class="fa fa-power-off"></i><span>Salir</span>
+                  </a>
+                </li>
+              </ul>
+
+
+          </ul>
+          
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <a><span class="my_footer">Austim App</span></a>
+      </div>
+    </nav>
+  </div>
