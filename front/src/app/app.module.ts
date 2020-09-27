@@ -17,6 +17,10 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { SobreDenverComponent } from './components/sobre-denver/sobre-denver.component';
+import { CalendarioComponent } from './components/calendario/calendario.component';
+import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+import { PacientesComponent } from './components/pacientes/pacientes.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     NavbarComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    SobreDenverComponent,
+    CalendarioComponent,
+    EstadisticasComponent,
+    PacientesComponent
   ],
   imports: [
     BrowserModule,
