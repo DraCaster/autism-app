@@ -10,6 +10,7 @@ import { DatePipe } from '@angular/common';
 
 
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,9 @@ import { SobreDenverComponent } from './components/sobre-denver/sobre-denver.com
 import { CalendarioComponent } from './components/calendario/calendario.component';
 import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
 import { PacientesComponent } from './components/pacientes/pacientes.component';
+import { ExamenTEAComponent } from './components/examen-tea/examen-tea.component';
+import { HistorialExamenesComponent } from './components/historial-examenes/historial-examenes.component';
+
 
 @NgModule({
   declarations: [
@@ -32,13 +36,16 @@ import { PacientesComponent } from './components/pacientes/pacientes.component';
     SobreDenverComponent,
     CalendarioComponent,
     EstadisticasComponent,
-    PacientesComponent
+    PacientesComponent,
+    ExamenTEAComponent,
+    HistorialExamenesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MDBBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

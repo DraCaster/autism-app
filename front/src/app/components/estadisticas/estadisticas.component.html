@@ -13,40 +13,18 @@
 <div class="slider-top-text body">
     <header class="masthead">
         <div class="col-xs-12 contenido">
-            <div class="rating-block"><h4 class="fs30">Calificación</h4>
-                <h2 class="fs40">4.3 <small>/ 5</small></h2>
-                <div class="row stars">
-                <div class="text-white text-center icon font-weight-bold"><i class="fa fa-star"></i></div>
-                <div class="text-white text-center icon font-weight-bold"><i class="fa fa-star"></i></div>
-                <div class="text-white text-center icon font-weight-bold"><i class="fa fa-star"></i></div>
-                <div class="text-white text-center icon font-weight-bold"><i class="fa fa-star"></i></div>
-                <div class="text-white text-center icon font-weight-bold"><i class="fa fa-star-half-o"></i></div>
-            </div>
-            <h4 class="fs20 center-align"></h4>
-                <div class="left">
-                    <div class="left block-text">
-                        <div class="fs16">Eficiencia</div>
-                    </div>
-                    <div class="left block-bar">
-                    <div class="bar">
-                    <div style="width: 1000%" class="progress-bar cyan accent-4"></div></div></div>
-                </div>
-                <div class="left">
-                    <div class="left block-text">
-                    <div class="fs16">Calidad</div></div>
-                <div class="left block-bar">
-                    <div class="bar">
-                    <div style="width: 80%" class="progress-bar green darken-3"></div></div></div></div>
-                <div class="left">
-                    <div class="left block-text">
-                    <div class="fs16">Velocidad</div></div>
-                <div class="left block-bar">
-                    <div class="bar">
-                    <div style="width: 60%" class="progress-bar orange accent-4"></div></div>
-                </div>
-                </div>
-            </div>
-
+            <div style="display: block">
+                <canvas mdbChart
+                    [chartType]="chartType"
+                    [datasets]="chartDatasets"
+                    [labels]="chartLabels"
+                    [colors]="chartColors"
+                    [options]="chartOptions"
+                    [legend]="true"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">
+                </canvas>
+              </div>
 
         </div>
     </header>
