@@ -24,6 +24,8 @@ import { EstadisticasComponent } from './components/estadisticas/estadisticas.co
 import { PacientesComponent } from './components/pacientes/pacientes.component';
 import { ExamenTEAComponent } from './components/examen-tea/examen-tea.component';
 import { HistorialExamenesComponent } from './components/historial-examenes/historial-examenes.component';
+import { AreaNivelComponent } from './components/area-nivel/area-nivel.component';
+import { ComentarioComponent } from './components/comentario/comentario.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { HistorialExamenesComponent } from './components/historial-examenes/hist
     EstadisticasComponent,
     PacientesComponent,
     ExamenTEAComponent,
-    HistorialExamenesComponent
+    HistorialExamenesComponent,
+    AreaNivelComponent,
+    ComentarioComponent
   ],
   imports: [
     BrowserModule,

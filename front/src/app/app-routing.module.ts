@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AreaNivelComponent } from './components/area-nivel/area-nivel.component';
 import { CalendarioComponent } from './components/calendario/calendario.component';
 import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
 import { ExamenTEAComponent } from './components/examen-tea/examen-tea.component';
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: 'pacientes', component: PacientesComponent },
   { path: 'examen_TEA', component: ExamenTEAComponent },
   { path: 'historial_examenes_TEA', component: HistorialExamenesComponent },
+  { path: 'area_nivel', component: AreaNivelComponent },
+  
   
 
 ];
