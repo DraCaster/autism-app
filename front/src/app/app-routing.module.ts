@@ -8,6 +8,7 @@ import { HistorialExamenesComponent } from './components/historial-examenes/hist
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PacientesComponent } from './components/pacientes/pacientes.component';
+import { PlanificacionComponent } from './components/planificacion/planificacion.component';
 import { RegisterComponent } from './components/register/register.component';
 import { SobreDenverComponent } from './components/sobre-denver/sobre-denver.component';
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'examen_TEA', component: ExamenTEAComponent },
   { path: 'historial_examenes_TEA', component: HistorialExamenesComponent },
   { path: 'area_nivel', component: AreaNivelComponent },
+  { path: 'planificacion', component: PlanificacionComponent },
   
   
 

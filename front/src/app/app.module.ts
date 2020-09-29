@@ -26,6 +26,7 @@ import { ExamenTEAComponent } from './components/examen-tea/examen-tea.component
 import { HistorialExamenesComponent } from './components/historial-examenes/historial-examenes.component';
 import { AreaNivelComponent } from './components/area-nivel/area-nivel.component';
 import { ComentarioComponent } from './components/comentario/comentario.component';
+import { PlanificacionComponent } from './components/planificacion/planificacion.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ComentarioComponent } from './components/comentario/comentario.componen
     ExamenTEAComponent,
     HistorialExamenesComponent,
     AreaNivelComponent,
-    ComentarioComponent
+    ComentarioComponent,
+    PlanificacionComponent
   ],
   imports: [
     BrowserModule,
