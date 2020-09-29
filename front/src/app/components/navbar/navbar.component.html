@@ -20,7 +20,7 @@
           </div> -->
         </div>
         <div class="sidebar-menu">
-          <ul>
+          <ul *ngIf="!this.isLogged()">
             <li class="header-menu">
               <span></span>
             </li>
@@ -55,9 +55,9 @@
             </li>
           </ul>
         
-          <ul *ngIf="this.isManager()">
+          <ul *ngIf="this.isLogged()">
             <li class="">
-              <a [routerLink]="['/denver']">
+              <a [routerLink]="['/sobre_denver']">
                 <i class="fa fa-star"></i><span>Sobre Denver</span>
                 <span class="badge badge-pill badge-warning"></span>
               </a>
@@ -72,7 +72,7 @@
             </li>
   
             <li class="">
-              <a [routerLink]="['/tea']">
+              <a [routerLink]="['/historial_examenes_TEA']">
                 <i class="fa fa-star"></i><span>Examen inicial TEA</span>
                 <span class="badge badge-pill badge-danger"></span>
               </a>
@@ -99,7 +99,7 @@
                 </a>
             </li>
             <li class="">
-                <a [routerLink]="['/resultados']">
+                <a [routerLink]="['/estadisticas']">
                     <i class="fa fa-star"></i><span>Ver resultados</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
@@ -111,38 +111,16 @@
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
-          </ul>
-          
-          <ul *ngIf="this.isManager()">
+            
             <li class="header-menu">
-              <span>Privado</span>
+                <span>Salida</span>
             </li>
-  
             <li class="">
-              <a [routerLink]="['/usuarios']">
-                <i class="fa fa-user"></i><span>Usuarios</span>
-                <span class="badge badge-pill badge-danger"></span>
-              </a>
-            </li>
-  
-            <li class="">
-              <a [routerLink]="['/perfiles']">
-                <i class="fa fa-users"></i><span>Perfiles</span>
-                <span class="badge badge-pill badge-danger"></span>
-              </a>
-            </li>
-
-
-            <ul>
-                <li class="header-menu">
-                  <span>Salida</span>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="#" (click)="onLogout()">
+                <a class="nav-link" href="#" (click)="onLogout()">
                     <i class="fa fa-power-off"></i><span>Salir</span>
-                  </a>
-                </li>
-              </ul>
+                </a>
+            </li>
+                
 
 
           </ul>

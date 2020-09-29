@@ -11,21 +11,21 @@ import { PacientesComponent } from './components/pacientes/pacientes.component';
 import { PlanificacionComponent } from './components/planificacion/planificacion.component';
 import { RegisterComponent } from './components/register/register.component';
 import { SobreDenverComponent } from './components/sobre-denver/sobre-denver.component';
+import { AuthGuard } from './guards/auth.guard';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'sobre_denver', component: SobreDenverComponent },
-  { path: 'calendario', component: CalendarioComponent },
-  { path: 'estadisticas', component: EstadisticasComponent },
-  { path: 'pacientes', component: PacientesComponent },
-  { path: 'examen_TEA', component: ExamenTEAComponent },
-  { path: 'historial_examenes_TEA', component: HistorialExamenesComponent },
-  { path: 'area_nivel', component: AreaNivelComponent },
-  { path: 'planificacion', component: PlanificacionComponent },
-  
+  { path: 'sobre_denver', component: SobreDenverComponent, canActivate: [AuthGuard]  },
+  { path: 'cronograma', component: CalendarioComponent, canActivate: [AuthGuard]  },
+  { path: 'estadisticas', component: EstadisticasComponent, canActivate: [AuthGuard]  },
+  { path: 'pacientes', component: PacientesComponent, canActivate: [AuthGuard]  },
+  { path: 'examen_TEA', component: ExamenTEAComponent, canActivate: [AuthGuard]  },
+  { path: 'historial_examenes_TEA', component: HistorialExamenesComponent, canActivate: [AuthGuard]  },
+  { path: 'area_nivel', component: AreaNivelComponent, canActivate: [AuthGuard]  },
+  { path: 'planificacion', component: PlanificacionComponent, canActivate: [AuthGuard]  },
   
 
 ];

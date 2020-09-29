@@ -16,22 +16,30 @@ export class AuthService {
 
     let user : any = {
       id : null,
-      username: username,
-      password: pass,
       nombre: null,
+      apellido: null,
       email: null,
-      perfil: null,
+      usuario: null,
+      clave: null,
     }
 
-    return (this.http.post(url_api, user, {observe: 'response'})
-    .pipe(map(data => {
-      this.setUser(data.body);
-      return data;
-    })));
+    if(username == "test" && pass == "test"){
+      user.id = 1;
+      user.usuario = username;
+      user.clave = pass;
+      this.setUser(user);
+    }
+    return user;
+
+    // return (this.http.post(url_api, user, {observe: 'response'})
+    // .pipe(map(data => {
+    //   this.setUser(data.body);
+    //   return data;
+    // })));
   }
   
 
-  isNotLogged(){
+  isLogged(){
     return (this.getCurrentUser() != null);
   }
   
@@ -45,13 +53,12 @@ export class AuthService {
 
   setUser(user: any){
     let cadena = {
-      'username': user.username,
-      'name': user.nombre,
-      'profile': user.perfil.nombre
+      'username': user.usuario,
+      'name': user.nombre
     }
 
     let user_string = JSON.stringify(cadena);
-    localStorage.setItem("currentUser", user_string)
+    localStorage.setItem("currentUser", user_string);
   }
 
   getCurrentUser(){
