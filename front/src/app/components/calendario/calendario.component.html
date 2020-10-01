@@ -1,0 +1,153 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark mynav">
+    <div class="container">
+        <div id="main">    
+            <a class="navbar-brand" href="#">
+                <h3 class="my-heading ">Cronograma<span class="bg-main"></span></h3>
+            </a>
+        </div>
+        <app-navbar></app-navbar>
+    </div>
+</nav>
+
+<div class="slider-top-text body">
+    <header class="masthead">
+        <div class="row contenido">
+            <button class="slide" id="slideLeft" type="button"> < </button>
+            <div class="scrollmenu overflow-hidden">
+                <a *ngFor="let in of week(); let i = index;" attr.data-target="#data{{i+1}}" data-toggle="tab" title="welcome">
+                    <div>
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <span class="round-tabs">
+                        Semana {{ i+1 }}
+                    </span> 
+                </a>
+            </div>
+            <button class="slide" id="slideRight" type="button"> > </button>
+
+        </div>
+
+
+        <div class="tab-content">
+                            
+            <div class="tab-pane fade in active col-12" id="data1">
+                <div class="linea">
+
+                    <div class="row">
+                            <table class="table fecha text-center">
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td class="col-2 text-center">
+                                            <div>
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <strong>Lunes</strong>
+                                        </td>
+                                        <td class="col-md-10">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h5 class="media-heading font-weight-bold"> <a [routerLink]="['/#']">Sesión 1 (Camila) Turno Mañana</a></h5>
+                                                    <h5 class="media-heading font-weight-bold"> <a [routerLink]="['/#']">Sesión 2 (Luján) Turno Tarde</a></h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-2 text-center">
+                                            <div>
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <strong>Martes</strong>
+                                        </td>
+                                        <td class="col-md-10">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h5 class="media-heading font-weight-bold"> </h5>
+                                                    <h5 class="media-heading font-weight-bold"> </h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-2 text-center">
+                                            <div>
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <strong>Miércoles</strong>
+                                        </td>
+                                        <td class="col-md-10">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h5 class="media-heading font-weight-bold"> <a [routerLink]="['/#']">Sesión 1 (Camila) Turno Mañana</a></h5>
+                                                    <h5 class="media-heading font-weight-bold"> <a [routerLink]="['/#']">Sesión 2 (Luján) Turno Tarde</a></h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-2 text-center">
+                                            <div>
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <strong>Jueves</strong>
+                                        </td>
+                                        <td class="col-md-10">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h5 class="media-heading font-weight-bold"> </h5>
+                                                    <h5 class="media-heading font-weight-bold"> </h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-2 text-center">
+                                            <div>
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <strong>Viernes</strong>
+                                        </td>
+                                        <td class="col-md-10">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h5 class="media-heading font-weight-bold"> <a [routerLink]="['/#']">Sesión 1 (Camila) Turno Mañana</a></h5>
+                                                    <h5 class="media-heading font-weight-bold"> <a [routerLink]="['/#']">Sesión 2 (Luján) Turno Tarde</a></h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-2 text-center">
+                                            <div>
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <strong>Sábado</strong>
+                                        </td>
+                                        <td class="col-md-10">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h5 class="media-heading font-weight-bold"> </h5>
+                                                    <h5 class="media-heading font-weight-bold"> </h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+            </div>            
+        </div>
+
+    </header>
+</div>

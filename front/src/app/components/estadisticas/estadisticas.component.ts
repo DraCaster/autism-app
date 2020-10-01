@@ -15,10 +15,10 @@ export class EstadisticasComponent implements OnInit {
   public chartType: string = 'horizontalBar';
 
   public chartDatasets: Array<any> = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' }
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Resultados' }
   ];
 
-  public chartLabels: Array<any> = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
+  public chartLabels: Array<any> = ['Motricidad fina', 'Motricidad gruesa', 'Cognición', 'Imitación', 'Comunicación receptiva', 'Comunicación expresiva'];
 
   public chartColors: Array<any> = [
     {

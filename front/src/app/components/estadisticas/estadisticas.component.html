@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark mynav">
-    <div class="container">
+    <div class="container page-wrapper chiller-theme toggled">
         <div id="main">    
             <a class="navbar-brand" href="#">
                 <h3 class="my-heading ">Estadisticas<span class="bg-main"></span></h3>
@@ -9,23 +9,29 @@
     </div>
 </nav>
 
+<div class="page-wrapper chiller-theme toggled">
+    <main class="page-content">
+        <div class="container-fluid my_margin">
 
-<div class="slider-top-text body">
-    <header class="masthead">
-        <div class="col-xs-12 contenido">
-            <div style="display: block">
-                <canvas mdbChart
-                    [chartType]="chartType"
-                    [datasets]="chartDatasets"
-                    [labels]="chartLabels"
-                    [colors]="chartColors"
-                    [options]="chartOptions"
-                    [legend]="true"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
-                </canvas>
-              </div>
+            <div class="slider-top-text body">
+                <header class="masthead">
+                    <div class="col-xs-12 contenido">
+                        <div style="display: block">
+                            <canvas mdbChart
+                                [chartType]="chartType"
+                                [datasets]="chartDatasets"
+                                [labels]="chartLabels"
+                                [colors]="chartColors"
+                                [options]="chartOptions"
+                                [legend]="true"
+                                (chartHover)="chartHovered($event)"
+                                (chartClick)="chartClicked($event)">
+                            </canvas>
+                        </div>
 
+                    </div>
+                </header>
+            </div>
         </div>
-    </header>
+    </main>
 </div>
