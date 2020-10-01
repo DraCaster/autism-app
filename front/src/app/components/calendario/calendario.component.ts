@@ -41,7 +41,7 @@ export class CalendarioComponent implements OnInit {
   }
 
   week(): number[]{
-    return this.counter(30);
+    return this.counter(12);
   }
 
 
