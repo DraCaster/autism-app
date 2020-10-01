@@ -548,6 +548,11 @@ a.openNav {
     text-transform: uppercase;
 }
 
+a:hover,
+a:focus, p {
+    text-decoration: none;
+    color: rgb(4, 4, 66);
+}
 
 .floating-arrow {
     -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
