@@ -1,0 +1,44 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark mynav">
+    <div class="container">
+        <div id="main">    
+            <a class="navbar-brand" href="#">
+                <h3 class="my-heading font-weight-bold">Rutinas<span class="bg-main"></span></h3>
+            </a>
+        </div>
+        <app-navbar></app-navbar>
+    </div>
+</nav>
+
+<div class="slider-top-text body">
+    <header class="masthead">
+        <div class="col-xs-12 contenido">
+        <div class="col-md-12 col-md-offset-1">
+            <table class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th>Mis rutinas</th>
+                        <th class="text-center"></th>
+                        <th class="text-center"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-md-12">
+                            <div class="media">
+                                <div>
+                                    <i class="fa fa-user link rounded-circle"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a [routerLink]="[ '/detalle_rutina' ]">Motricidad fina</a></h4>
+                                    <h5 class="media-heading"> Objetivo: Lavarse los dientes </h5>
+                                </div>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </header>
+</div>
