@@ -35,21 +35,21 @@
             </li> -->
             <li class="">
               <a [routerLink]="['/register']">
-                <i class="fa fa-star"></i><span>Registrarme</span>
+                <i class="fa fa-user-plus"></i><span>Registrarme</span>
                 <span class="badge badge-pill badge-danger"></span>
               </a>
             </li>
 
             <li class="">
                 <a [routerLink]="['/login']">
-                    <i class="fa fa-star"></i><span>Iniciar sesión</span>
+                    <i class="fa fa-sign-in"></i><span>Iniciar sesión</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
 
             <li class="">
                 <a [routerLink]="['/ubicacion']">
-                    <i class="fa fa-star"></i><span>Ubicación</span>
+                    <i class="fa fa-map-marker"></i><span>Ubicación</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
@@ -58,56 +58,55 @@
           <ul *ngIf="this.isLogged()">
             <li class="">
               <a [routerLink]="['/sobre_denver']">
-                <i class="fa fa-star"></i><span>Sobre Denver</span>
+                <i class="fa fa-info-circle"></i><span>Sobre Denver</span>
                 <span class="badge badge-pill badge-warning"></span>
               </a>
             </li>
   
             <li class="">
               <a [routerLink]="['/pacientes']">
-                <i class="fa fa-star"></i>
-                <span>Mis pacientes</span>
+                <i class="fa fa-id-card"></i><span>Mis pacientes</span>
                 <span class="badge badge-pill badge-danger"></span>
               </a>
             </li>
   
             <li class="">
               <a [routerLink]="['/historial_examenes_TEA']">
-                <i class="fa fa-star"></i><span>Examen inicial TEA</span>
+                <i class="fa fa-edit"></i><span>Examen inicial TEA</span>
                 <span class="badge badge-pill badge-danger"></span>
               </a>
             </li>
 
             <li class="">
                 <a [routerLink]="['/planificacion']">
-                  <i class="fa fa-star"></i><span>Planificación</span>
+                  <i class="fa fa-calendar"></i><span>Planificación</span>
                   <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
 
             <li class="">
                 <a [routerLink]="['/cronograma']">
-                    <i class="fa fa-star"></i><span>Cronograma</span>
+                    <i class="fa fa-calendar-check-o"></i><span>Cronograma</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
 
             <li class="">
                 <a [routerLink]="['/rutina']">
-                    <i class="fa fa-star"></i><span>Obtener rutina</span>
+                    <i class="fa fa-book"></i><span>Obtener rutina</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
             <li class="">
                 <a [routerLink]="['/estadisticas']">
-                    <i class="fa fa-star"></i><span>Ver resultados</span>
+                    <i class="fa fa-line-chart"></i><span>Ver resultados</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
 
             <li class="">
                 <a [routerLink]="['/ubicacion']">
-                    <i class="fa fa-star"></i><span>Ubicación</span>
+                    <i class="fa fa-map-marker"></i><span>Ubicación</span>
                     <span class="badge badge-pill badge-danger"></span>
                 </a>
             </li>
@@ -117,7 +116,7 @@
             </li>
             <li class="">
                 <a class="nav-link" href="#" (click)="onLogout()">
-                    <i class="fa fa-power-off"></i><span>Salir</span>
+                    <i class="fa fa-sign-out"></i><span>Salir</span>
                 </a>
             </li>
                 

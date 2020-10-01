@@ -27,6 +27,8 @@ import { HistorialExamenesComponent } from './components/historial-examenes/hist
 import { AreaNivelComponent } from './components/area-nivel/area-nivel.component';
 import { ComentarioComponent } from './components/comentario/comentario.component';
 import { PlanificacionComponent } from './components/planificacion/planificacion.component';
+import { RutinasComponent } from './components/rutinas/rutinas.component';
+import { DetalleRutinaComponent } from './components/detalle-rutina/detalle-rutina.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { PlanificacionComponent } from './components/planificacion/planificacion
     HistorialExamenesComponent,
     AreaNivelComponent,
     ComentarioComponent,
-    PlanificacionComponent
+    PlanificacionComponent,
+    RutinasComponent,
+    DetalleRutinaComponent
   ],
   imports: [
     BrowserModule,

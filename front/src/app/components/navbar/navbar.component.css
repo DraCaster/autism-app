@@ -44,6 +44,7 @@
   
   .my_footer{
     margin-left: 45px;
+    color: #ffffff;
   }
   
   .page-wrapper .sidebar-wrapper,
@@ -96,7 +97,7 @@
   /*----------------sidebar-wrapper----------------*/
   
   .sidebar-wrapper {
-    width: 260px;
+    width: 270px;
     height: 100%;
     max-height: 100%;
     position: fixed;
@@ -364,7 +365,7 @@
   .chiller-theme .sidebar-wrapper .sidebar-brand>a,
   .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
   .chiller-theme .sidebar-footer>a {
-      color: #818896;
+    color: rgb(138, 24, 255);
   }
   
   .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
@@ -372,7 +373,8 @@
   .chiller-theme .sidebar-wrapper .sidebar-header .user-info,
   .chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
   .chiller-theme .sidebar-footer>a:hover i {
-      color: #000000;
+      color: rgb(71, 11, 131);
+      font-weight: bold;
       text-decoration: none;
   }
   
@@ -389,7 +391,7 @@
   .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
   .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
       color: #ffffff;
-      text-shadow:0px 0px 10px rgba(22, 199, 255, 1);
+      text-shadow:0px 0px 10px rgba(0, 0, 0, 1);
       text-decoration: none;
   }
   
@@ -399,6 +401,7 @@
   .chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
       background:  rgb(138, 24, 255);
       text-decoration: none;
+      color: rgb(255, 255, 255);
   }
   
   .chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
