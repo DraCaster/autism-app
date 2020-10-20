@@ -15,9 +15,8 @@ module.exports.getAreasAction = async function(req,res){
         return res.status(200).json(res)
     })
     .catch(err => {
-        return res.status(400).send({"Error"})
+        return res.status(400).send("Error")
     })
-
 }
 
 module.exports.getAreaAction = async function(req,res){
@@ -29,7 +28,6 @@ module.exports.getAreaAction = async function(req,res){
     .catch(err => {
         return res.status(404).send("No se encontro el area")
     })
-
 }
 
 module.exports.createAreaAction = async function(req,res){

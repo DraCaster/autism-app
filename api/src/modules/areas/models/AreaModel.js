@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-// Defining user Mongoose Schema
 const AreaSchema = new mongoose.Schema({
     areaName: {
         type: String, 

@@ -1,7 +1,11 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import './mongo-db-configuration'
+
 import userRouter from './src/modules/security/routes'
+import areaRouter from './src/modules/areas/routes'
+import evaluationRouter from './src/modules/evaluations/routes'
+
 import corsMiddleware from './src/modules/middleware/corsModdleware'
 import bodyParser from 'body-parser'
 import {jwtAuth, handleAuthError} from './src/modules/security/middleware/auth';
@@ -28,6 +32,8 @@ app.use(rbacMiddleware)
 
 //Routes
 app.use('/',userRouter)
+app.use('/',areaRouter)
+app.use('/',evaluationRouter)
 
 app.get('/status',(req, res)=>{res.send("Server running")})
 
