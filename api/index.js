@@ -5,7 +5,8 @@ import './mongo-db-configuration'
 import userRouter from './src/modules/security/routes'
 import areaRouter from './src/modules/areas/routes'
 import evaluationRouter from './src/modules/evaluations/routes'
-
+import multimediaRouter from './src/modules/multimedia/routes'
+import objetiveRouter from './src/modules/objectives/routes'
 import corsMiddleware from './src/modules/middleware/corsModdleware'
 import bodyParser from 'body-parser'
 import {jwtAuth, handleAuthError} from './src/modules/security/middleware/auth';
@@ -34,6 +35,8 @@ app.use(rbacMiddleware)
 app.use('/',userRouter)
 app.use('/',areaRouter)
 app.use('/',evaluationRouter)
+app.use('/',multimediaRouter)
+app.use('/',objetiveRouter)
 
 app.get('/status',(req, res)=>{res.send("Server running")})
 
