@@ -7,6 +7,8 @@ import areaRouter from './src/modules/areas/routes'
 import evaluationRouter from './src/modules/evaluations/routes'
 import multimediaRouter from './src/modules/multimedia/routes'
 import objetiveRouter from './src/modules/objectives/routes'
+import observationRouter from './src/modules/observations/routes'
+
 import corsMiddleware from './src/modules/middleware/corsModdleware'
 import bodyParser from 'body-parser'
 import {jwtAuth, handleAuthError} from './src/modules/security/middleware/auth';
@@ -37,6 +39,7 @@ app.use('/',areaRouter)
 app.use('/',evaluationRouter)
 app.use('/',multimediaRouter)
 app.use('/',objetiveRouter)
+app.use('/',observationRouter)
 
 app.get('/status',(req, res)=>{res.send("Server running")})
 
