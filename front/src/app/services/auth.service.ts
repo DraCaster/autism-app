@@ -3,6 +3,7 @@ import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { DataService } from './data.service';
+import { UserInterface } from '../models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +11,10 @@ import { DataService } from './data.service';
 export class AuthService {
   constructor(private http: HttpClient, private dataService: DataService) { }
 
-  loginUser(username: string, pass: string){
-    // const url_api = environment.url + `usuarios/login`;
+  private token: string;
+  
+  //metodo hardcoded utilizado actualmente
+  loginUser_HD(username: string, pass: string){
     const url_api = "";
 
     let user : any = {
@@ -30,14 +33,39 @@ export class AuthService {
       this.setUser(user);
     }
     return user;
+  }
 
-    // return (this.http.post(url_api, user, {observe: 'response'})
-    // .pipe(map(data => {
-    //   this.setUser(data.body);
-    //   return data;
-    // })));
+  loginUser(username: string, pass: string){
+    const url_api = `auth`;
+
+    let user : UserInterface = {
+      id : null,
+      nombre: null,
+      apellido: null,
+      email: null,
+      usuario: username,
+      clave: pass
+    }
+
+    return (this.http.post(url_api, user, {observe: 'response'})
+    .pipe(map(data => {
+      this.setUser(data.body);
+      this.setToken(data.headers.get('Auth'));
+      return data;
+    })));
   }
   
+  private setToken(token: string):void{
+    localStorage.setItem("ACCESS_TOKEN", token);
+    this.token = token;
+  }
+
+  private getToken(): string{
+    if(this.token != null ){
+      this.token = localStorage.getItem("ACCESS_TOKEN");
+    }
+    return this.token
+  }
 
   isLogged(){
     return (this.getCurrentUser() != null);
